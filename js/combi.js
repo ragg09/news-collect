@@ -1,7 +1,7 @@
   $(document).ready(function(){
 
-    // julz key = AIzaSyCZIJeJz9b1wrCHLKr_dOypiAGtzeAqi10
-    // rene key = AIzaSyBcIP9j9aRBSHgJ0rySd9aGb4QwzYTXkj8
+    // julz key = 
+    // rene key = 
 
 fetch_customer_data();
 function fetch_customer_data(query = ''){
@@ -502,7 +502,7 @@ $(document).on('keyup', '#search', function(){
 
     //this function is from youtube api live news
     $.ajax({
-        url: 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE2606prvXQc_noEqKxVJXA&eventType=live&maxResults=1&order=date&q=covid&regionCode=ph&type=video&key=AIzaSyCZIJeJz9b1wrCHLKr_dOypiAGtzeAqi10',
+        url: 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE2606prvXQc_noEqKxVJXA&eventType=live&maxResults=1&order=date&q=covid&regionCode=ph&type=video&key=',
         dataType: 'json',
         type: 'GET',
         success: function(data){

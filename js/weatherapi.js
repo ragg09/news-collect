@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	//GETTING ID ADDRESS USING IPGEOLCATION API
 	$.ajax({
-		url: 'https://api.ipgeolocation.io/ipgeo?apiKey=b8668c328d524ce5a5809f1a5a0e4d4f',
+		url: 'https://api.ipgeolocation.io/ipgeo?apiKey=',
 		dataType: 'json',
 		type: 'GET',
 		success: function(data){
@@ -12,10 +12,10 @@ $(document).ready(function(){
 
 		    //USING IP2LOCATION API FOR ACCURATE GEOLOCATION
 		    //key=QSKCEPEZYZ	official free key, gamit muna tayo ng demo key para d maubos 5000 lang lahat ng limit nito
-		    //backup key=4OWC6LVVKX
+		    //backup key=
 		    //key=demo			20 request a day lang,		
 		    $.ajax({
-				url: 'https://api.ip2location.com/v2/?ip='+data.ip+'&key=4OWC6LVVKX&package=WS24&format=json',
+				url: 'https://api.ip2location.com/v2/?ip='+data.ip+'&key=&package=WS24&format=json',
 				//url: 'https://api.ip2location.com/v2/?ip='+data.ip+'&key=demo&package=WS24&format=json',
 				dataType: 'json',
 				type: 'GET',
@@ -67,7 +67,7 @@ $(document).ready(function(){
 						url: 'http://api.openweathermap.org/data/2.5/forecast',
 						dataType: 'json',
 						type: 'GET',
-						data: {q: datum.city_name, appid: '3d2d0ae5204b6bd094ae5f50db05539b', cnt: 8, units: 'metric'},
+						data: {q: datum.city_name, appid: '', cnt: 8, units: 'metric'},
 							success: function(data){
 								//console.log(data)
 								var tr = $("<tr>");

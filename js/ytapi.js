@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	// julz key = AIzaSyCZIJeJz9b1wrCHLKr_dOypiAGtzeAqi10
-	// rene key = AIzaSyBcIP9j9aRBSHgJ0rySd9aGb4QwzYTXkj8
+	// julz key = 
+	// rene key = 
 
 	//FOR DEFAULT RETURN FUNCTION
 	$.ajax({
-	    url: 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&regionCode=PH&order=date&q=News%20Philippines&key=AIzaSyBcIP9j9aRBSHgJ0rySd9aGb4QwzYTXkj8',
+	    url: 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&regionCode=PH&order=date&q=News%20Philippines&key=',
 	    dataType: 'json',
 		type: 'GET',
 	    success: function(data){
@@ -39,7 +39,7 @@ $(document).ready(function(){
 	        url: 'https://youtube.googleapis.com/youtube/v3/search?',
 	        dataType: 'json',
 	        type: 'GET',
-	        data: {part: 'snippet', maxResults: 12, q: search, regionCode: 'PH', order: 'date', key: 'AIzaSyCZIJeJz9b1wrCHLKr_dOypiAGtzeAqi10'},
+	        data: {part: 'snippet', maxResults: 12, q: search, regionCode: 'PH', order: 'date', key: ''},
 	        success: function(data){
 	            console.log(data);
 	            var p = $("<p>");

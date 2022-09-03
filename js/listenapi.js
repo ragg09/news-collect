@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	//'https://listen-api.listennotes.com/api/v2/search?q=covid&sort_by_date=0&type=podcast&len_min=10&len_max=30&language=English&X-ListenAPI-Key=0487092c39594025b649a47c6802e046
-	//X-ListenAPI-Key=0487092c39594025b649a47c6802e046
+	//'https://listen-api.listennotes.com/api/v2/search?q=covid&sort_by_date=0&type=podcast&len_min=10&len_max=30&language=English&X-ListenAPI-Key=
+	//X-ListenAPI-Key=
 
 	$.ajax({
 		//for search
@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 	    //for genre show
 	    // url: 'https://listen-api.listennotes.com/api/v2/genres?top_level_only=1',
-	    headers: { 'X-ListenAPI-Key': '0487092c39594025b649a47c6802e046' },
+	    headers: { 'X-ListenAPI-Key': '' },
 	    dataType: 'json',
 		type: 'GET',
 	    success: function(data){
@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 		$.ajax({
 	        url: 'https://listen-api.listennotes.com/api/v2/search?q='+search+'&sort_by_date=0&genre_id=99&offset=0&type=podcast&language=English',
-	        headers: { 'X-ListenAPI-Key': '0487092c39594025b649a47c6802e046' },
+	        headers: { 'X-ListenAPI-Key': '' },
 	        dataType: 'json',
 	        type: 'GET',
 	        success: function(data){

@@ -1,15 +1,15 @@
 $(document).ready(function(){
-	// julz key = 609570e0bf894a2d9d8aa918b9e03d38
-	// rene key = AIzaSyBcIP9j9aRBSHgJ0rySd9aGb4QwzYTXkj8
+	// julz key = 
+	// rene key = 
 
 	//FOR DEFAULT RETURN FUNCTION
 	
 	$.ajax({
-	    //url: 'https://newsapi.org/v2/everything?q=pnp&sortBy=publishedAt&pageSize=12&language=en&apiKey=609570e0bf894a2d9d8aa918b9e03d38',
-	    url: 'https://newsapi.org/v2/top-headlines?country=ph&pageSize=20&apiKey=609570e0bf894a2d9d8aa918b9e03d38',
+	    //url: 'https://newsapi.org/v2/everything?q=pnp&sortBy=publishedAt&pageSize=12&language=en&apiKey=',
+	    url: 'https://newsapi.org/v2/top-headlines?country=ph&pageSize=20&apiKey=',
 	    dataType: 'json',
 		type: 'GET',
-		// data: {maxResults: 12, q: search, country: 'ph', from: 'publishedAt', apiKey: '609570e0bf894a2d9d8aa918b9e03d38'},
+		// data: {maxResults: 12, q: search, country: 'ph', from: 'publishedAt', apiKey: ''},
 	    success: function(data){
 	        console.log(data);
 	        var p = $("<p>");
@@ -58,10 +58,10 @@ $(document).ready(function(){
 		console.log(search);
 
 		$.ajax({
-	        url: 'https://newsapi.org/v2/everything?q='+search+'&pageSize=12&sortBy=publishedAt&language=en&apiKey=609570e0bf894a2d9d8aa918b9e03d38',
+	        url: 'https://newsapi.org/v2/everything?q='+search+'&pageSize=12&sortBy=publishedAt&language=en&apiKey=',
 	        dataType: 'json',
 	        type: 'GET',
-	        // data: {q: search, pageSize: 12, sortBy: 'publishedAt', language: 'en', apiKey: '609570e0bf894a2d9d8aa918b9e03d38'},
+	        // data: {q: search, pageSize: 12, sortBy: 'publishedAt', language: 'en', apiKey: ''},
 	        success: function(data){
 	            console.log(data);
 	            var p = $("<p>");
